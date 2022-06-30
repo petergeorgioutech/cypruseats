@@ -1,0 +1,10 @@
+2022-05-30T14:07:40+00:00 CRITICAL Uncaught Error: Class 'Golo_Helper' not found in /home/htbitsaeyu1z/public_html/wp-content/plugins/golo-framework/includes/base/fields/map/map.class.php:13
+Stack trace:
+#0 /home/htbitsaeyu1z/public_html/wp-includes/class-wp-hook.php(307): GLF_Field_Map->enqueue('')
+#1 /home/htbitsaeyu1z/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 /home/htbitsaeyu1z/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/htbitsaeyu1z/public_html/wp-admin/admin-footer.php(78): do_action('admin_footer', '')
+#4 /home/htbitsaeyu1z/public_html/wp-admin/admin.php(297): require_once('/home/htbitsaey...')
+#5 {main}
+  thrown in /home/htbitsaeyu1z/public_html/wp-content/plugins/golo-framework/includes/base/fields/map/map.class.php on line 13
+

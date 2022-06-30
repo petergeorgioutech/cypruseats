@@ -1,0 +1,16 @@
+.place-search button.gm-ui-hover-effect:hover path {
+	fill: $accent_color;
+}
+.golo-marker .place-rating {
+	color: $accent_color;
+}
+.place-search .btn-close path {
+	@include transition-03;
+}
+.place-search .btn-close:hover path {
+	fill: $accent_color;
+	@include transition-03;
+}
+.place-search .form-control.nice-select .current {
+	color: $accent_color;
+}

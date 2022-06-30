@@ -1,0 +1,66 @@
+.golo-product-carousel-countdown {
+	border: 2px solid #4e97fd;
+	border-radius: 5px;
+	padding: 0 30px 48px;
+	margin-top: 21px;
+
+	.product-countdown-header {
+		display: inline-flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 17px;
+		background: #fff;
+		transform: translateY(-23px);
+		padding: 5px 20px
+	}
+
+	.product-countdown-heading {
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 1.2;
+		margin-right: 18px;
+		margin-bottom: 5px;
+	}
+
+	.countdown-wrap {
+		display: inline-flex;
+		align-items: center;
+		color: #fff;
+		background: #e4573d;
+		border-radius: 30px;
+		padding: 6px 24px;
+		margin-bottom: 5px;
+	}
+
+	.countdown-label {
+		font-size: 20px;
+		line-height: 1;
+		margin-right: 18px;
+	}
+
+	.countdown-content {
+		display: flex;
+		font-size: 24px;
+		line-height: 1;
+		font-weight: 700;
+
+		.text {
+			display: none;
+		}
+
+		> div {
+			+ div {
+				position: relative;
+				margin-left: 10px;
+				padding-left: 10px;
+
+				&:before {
+					content: ':';
+					position: absolute;
+					top: -2px;
+					left: -4px;
+				}
+			}
+		}
+	}
+}

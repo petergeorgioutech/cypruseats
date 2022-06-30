@@ -1,0 +1,18 @@
+.golo-product-categories {
+	.product-cat-wrapper {
+		height: 100%;
+		position: relative;
+		display: block;
+		border-radius: 5px;
+		padding: 25px 30px 30px;
+		background: #f8f8f8;
+		text-align: center;
+	}
+
+	.product-cat-name {
+		@extend %NormalTransition;
+		font-size: 18px;
+		font-weight: 400;
+		margin: 12px 0 0;
+	}
+}

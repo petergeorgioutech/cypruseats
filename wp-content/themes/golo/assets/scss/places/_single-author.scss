@@ -1,0 +1,292 @@
+.archive.author {
+
+	.site-layout.has-sidebar #primary {
+		max-width: calc(100% - 300px);
+		padding-right: 15px;
+	}
+
+	.site-layout.has-sidebar #secondary {
+		flex: 0 0 300px;
+    	max-width: 300px;
+	}
+
+	.block-heading {
+		margin-bottom: 25px;
+
+		h3 {
+			line-height: 1.58;
+			margin-bottom: 0;
+		}
+	}
+
+	.author-places {
+		padding-bottom: 40px;
+		border-bottom: 2px solid #eee;
+		margin-bottom: 25px;
+	}
+
+	.author-info {
+		background-color: #f9f9f9;
+		padding-top: 25px;
+		padding-bottom: 25px;
+
+		.info-area {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.entry-detail {
+				display: flex;
+				align-items: center;
+			}
+
+			.entry-left {
+				flex: 1;
+				padding-right: 20px;
+			}
+
+			.entry-avatar {
+				flex: 0 0 120px;
+				padding-right: 20px;
+			}
+
+			.author-name {
+				margin-bottom: 5px;
+			}
+
+			.btn-send-message>a {
+				background: #2d2d2d;
+				border-color: #2d2d2d;
+
+				i {
+					position: relative;
+    				top: -1px;
+    				margin-right: 10px;
+				}
+
+				&:hover {
+					background: $accent_color;
+					border-color: $accent_color;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.author-reviews .reviews-list {
+		list-style-type: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		max-height: 700px;
+		overflow: scroll;
+
+		li.author-review {
+			padding: 25px;
+			border-radius: 5px;
+  			border: solid 1px #eeeeee;
+
+  			&+li.author-review {
+  				margin-top: 25px;
+  			}
+		}
+
+		.entry-head {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		.entry-avatar {
+			padding-right: 10px;
+
+			img {
+				width: 50px;
+				height: 50px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+
+		.entry-name {
+			display: flex;
+			align-items: center;
+			margin-bottom: 3px;
+
+			.author-name {
+				font-size: 15px;
+				font-weight: 500;
+				line-height: 1.53;
+				margin-bottom: 0;
+				margin-right: 5px;
+			}
+
+			.author-rating {
+				line-height: 1;
+			}
+		}
+
+		.entry-comment {
+			margin-bottom: 23px;
+		}
+
+		.entry-comment p:last-child {
+			margin-bottom: 0;
+		}
+
+		.review-date {
+			font-size: 13px;
+			font-style: italic;
+			color: #9d9d9d;
+			display: inherit;
+		}
+
+		.entry-bottom {
+			line-height: 1.5;
+			
+			a {
+				color: $accent_color;
+			}	
+		}
+	}
+
+	#secondary .inner-sidebar {
+		border-radius: 10px;
+		border: solid 1px #eeeeee;
+		background-color: #ffffff;
+		padding: 25px;
+
+		.entry-title {
+			font-size: 15px;
+  			font-weight: 500;
+  			line-height: 1.6;
+  			color: $primary_color;
+  			margin-bottom: 15px;
+  			text-transform: uppercase;
+		}
+
+		.entry-desc {
+			margin-bottom: 15px;
+
+			p:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.contact-info {
+		
+		ul {
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style-type: none;
+		}
+
+		li {
+			display: flex;
+			margin-bottom: 8px;
+			line-height: 1.5;
+			word-break: break-all;
+		}
+
+		li:last-child {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: $text_color;
+		}
+
+		i {
+			margin-right: 10px;
+			color: $accent_color;
+		}
+	}
+
+	.author-social {
+		margin-top: 25px;
+
+		.list-info {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style-type: none;
+
+			li {
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+			}
+
+			a:hover {
+				color: #fff;
+			}
+
+			i {
+				line-height: 1;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.archive.author .site-layout.has-sidebar {
+		display: flex;
+		flex-wrap: wrap;
+
+		#primary,#secondary {
+			flex: 0 0 100%;
+			max-width: 100%;
+		    padding-left: 0;
+		    padding-right: 0;
+		}
+
+		#secondary {
+			order: 1;
+			margin-top: 0;
+			margin-bottom: 40px;
+		}
+
+		#primary {
+			order: 2;
+		}
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.archive.author .author-info .info-area {
+		display: block;
+
+		.entry-avatar {
+			flex: 0 0 100px;
+		}
+
+		.entry-right {
+			margin-top: 20px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

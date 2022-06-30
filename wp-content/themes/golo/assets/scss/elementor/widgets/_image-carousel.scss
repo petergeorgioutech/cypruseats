@@ -1,0 +1,7 @@
+.elementor-widget-golo-image-carousel {
+	.image {
+		img {
+			@extend %NormalTransition;
+		}
+	}
+}

@@ -1,0 +1,272 @@
+// Transform
+@mixin transform($value){
+	-webkit-transform: $value;
+	-moz-transform: $value;
+	-o-transform: $value;
+	-ms-transform: $value;
+	transform: $value;
+}
+
+@mixin transform-origin($value){
+  -webkit-transform-origin: $value;
+  -moz-transform-origin: $value;
+  -o-transform-origin: $value;
+  -ms-transform-origin: $value;
+  transform-origin: $value;
+}
+
+//Box Shadow
+@mixin box-shadow($value){
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	box-shadow: $value;
+}
+
+@mixin border-radius($value){
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}
+
+// Transition 0.3s
+@mixin transition-03 {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+// Transition 0.5s
+@mixin transition-05 {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+// User select
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+  -khtml-user-select: $value;
+  -moz-user-select: -moz-$value;
+  -o-user-select: $value;
+  user-select: $value;
+}
+
+@mixin input-checkbox {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e1e1e1;
+  background: #fff;
+  margin-right: 10px;
+  text-align: center;
+}
+
+@mixin input-checked {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 12px;
+  line-height: 18px;
+  color: $accent_color;
+  border-color: $accent_color;
+}
+
+@mixin NormalTransition {
+  transition: all .25s cubic-bezier(.645, .045, .355, 1);
+}
+
+%NormalTransition {
+  @include NormalTransition();
+}
+
+@mixin FastTransition {
+  transition: all .15s cubic-bezier(.645, .045, .355, 1);
+}
+
+%FastTransition {
+  @include FastTransition();
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%clearfix {
+  @include clearfix;
+}
+
+@mixin absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+%Absolute {
+  @include absolute();
+}
+
+%ContentAbsolute {
+  content: '';
+  @include absolute();
+}
+
+// Mixin for link transition
+
+@mixin LinkTransition {
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+    background: currentColor;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+}
+
+%LinkTransition {
+  @include LinkTransition();
+}
+
+@mixin LinkTransition02 {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  padding: 5px 0;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e7e7e7;
+    transform-origin: right;
+    transform: scaleX(1) translateZ(0);
+    transition: transform .6s cubic-bezier(.165, .84, .44, 1) .3s, -webkit-transform .6s cubic-bezier(.165, .84, .44, 1) .3s;
+  }
+
+  &:after {
+    transform-origin: left;
+    transform: scaleX(0) translateZ(0);
+    transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+  }
+
+  &:hover {
+    &:before {
+      transform: scaleX(0) translateZ(0);
+      transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+    }
+
+    &:after {
+      transform: scaleX(1) translateZ(0);
+      transition: transform .6s cubic-bezier(.165, .84, .44, 1) .3s, -webkit-transform .6s cubic-bezier(.165, .84, .44, 1) .3s;
+    }
+  }
+}
+
+%LinkTransition02 {
+  @include LinkTransition02();
+}
+
+// Mixin for font awesome version 5.x
+
+@mixin FontAwesome {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+%FontAwesomeSolid {
+  @include FontAwesome();
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+}
+
+%FontAwesomeLight {
+  @include FontAwesome();
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300;
+}
+
+%FontAwesomeRegular {
+  @include FontAwesome();
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+}
+
+%FontAwesomeBrands {
+  @include FontAwesome();
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+
+%FontAwesomeSolidImportant {
+  @include FontAwesome();
+  font-family: 'Font Awesome 5 Pro' !important;
+  font-weight: 900;
+}
+
+%FontAwesomeLightImportant {
+  @include FontAwesome();
+  font-family: 'Font Awesome 5 Pro' !important;
+  font-weight: 300;
+}
+
+%FontAwesomeRegularImportant {
+  @include FontAwesome();
+  font-family: 'Font Awesome 5 Pro' !important;
+  font-weight: 400;
+}
+
+%FontAwesomeBrandsImportant {
+  @include FontAwesome();
+  font-family: 'Font Awesome 5 Brands' !important;
+  font-weight: 400;
+}
+
+@mixin LightCloseCursor {
+  cursor: url('assets/images/cursor/light-close.png') 16 16, pointer;
+}
+
+%LightCloseCursor {
+  @include LightCloseCursor();
+}

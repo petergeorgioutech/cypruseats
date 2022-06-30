@@ -1,0 +1,70 @@
+.elementor-editor-active {
+	.page-header {
+		pointer-events: none;
+
+		* {
+			pointer-events: none !important;
+		}
+	}
+}
+
+.elementor-element-editable {
+	&.golo-heading-wrapper-editing {
+		.golo-modern-heading {
+			outline: 1px dashed #eee;
+		}
+	}
+
+	&.elementor-widget-golo-image-layers {
+		.artboard {
+			outline: 2px dashed #d5dadf;
+		}
+	}
+
+	// Force showing swiper arrows on edit in editor.
+	&.golo-swiper-arrows-editing {
+		.golo-swiper {
+			.swiper-nav-button {
+				transition-delay: 0s !important;
+				opacity: 1 !important;
+				visibility: visible !important;
+			}
+		}
+	}
+
+	&.golo-map-marker-overlay-editing {
+		.golo-map-overlay-content {
+			display: block !important;
+		}
+	}
+}
+
+.elementor-widget-golo-flip-box {
+	&.golo-flip-box--flipped {
+		.elementor-widget-container {
+			.front-side {
+				display: none;
+			}
+
+			.back-side {
+				-webkit-transform: none;
+				-ms-transform: none;
+				transform: none;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.cities-full-height{
+	.elementor-widget-city,
+	.elementor-widget-container,
+	.elementor-single-city,
+	.inner-item,
+	.inner-item img{
+		height: 100%;
+	}
+	.inner-item img{
+		object-fit: cover;
+	}
+}
