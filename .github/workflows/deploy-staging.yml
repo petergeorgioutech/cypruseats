@@ -1,0 +1,22 @@
+name: Deploy to staging.cyhpruseats.com
+
+on:
+  push:
+    branches: [ staging ]
+  pull_request:
+    branches: [ staging ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+       - uses: actions/checkout@v2
+       - name: FTP-Deploy-Action
+         uses: SamKirkland/FTP-Deploy-Action@3.1.1
+         with:
+           ftp-server: ${{ secrets.FTP_SERVER }}
+           ftp-username: ${{ secrets.FTP_USERNAME_STAGING }}
+           ftp-password: ${{ secrets.FTP_PASSWORD }}
+           local-dir: /
