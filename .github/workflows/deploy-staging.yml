@@ -8,15 +8,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-       - uses: actions/checkout@v2
-       - name: FTP-Deploy-Action
-         uses: SamKirkland/FTP-Deploy-Action@3.1.1
-         with:
-           ftp-server: ${{ secrets.FTP_SERVER }}
-           ftp-username: ${{ secrets.FTP_USERNAME_STAGING }}
-           ftp-password: ${{ secrets.FTP_PASSWORD }}
-           local-dir: /
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        erver: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME_STAGING }}
+        password: ${{ secrets.FTP_PASSWORD }}
