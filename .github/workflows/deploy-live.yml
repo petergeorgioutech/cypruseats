@@ -1,10 +1,10 @@
-name: Deploy to staging.cyhpruseats.com
+name: Deploy to cypruseats.com
 
 on:
   push:
-    branches: [ staging ]
+    branches: [ master ]
   pull_request:
-    branches: [ staging ]
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:

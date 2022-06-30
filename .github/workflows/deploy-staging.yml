@@ -1,4 +1,4 @@
-name: Deploy to staging.cyhpruseats.com
+name: Deploy to staging.cypruseats.com
 
 on:
   push:
