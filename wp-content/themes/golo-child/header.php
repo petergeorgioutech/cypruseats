@@ -64,7 +64,7 @@ if ( is_rtl() || $enable_rtl_mode ) {
 		}
 	?>
 	
-	<div id="wrapper" class="hello-world  <?php echo esc_attr($layout_content); ?>">
+	<div id="wrapper" class="hello-world <?php echo esc_attr($layout_content); ?>">
 
 		<header class="site-header <?php echo join(' ', $header_classes); ?>">
 			<?php get_template_part( 'templates/header/header' ); ?>
