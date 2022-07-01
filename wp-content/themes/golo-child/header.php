@@ -70,4 +70,4 @@ if ( is_rtl() || $enable_rtl_mode ) {
 			<?php get_template_part( 'templates/header/header' ); ?>
 		</header>
 
-		<div id="content" class="site-content">
+		<div id="content" class="site-content"> 
