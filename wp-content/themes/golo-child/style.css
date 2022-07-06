@@ -8,3 +8,21 @@ Template: golo
 Text Domain: golo
 Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 */
+
+/* 
+    BEGIN
+    Fix Header Search Alignment 
+*/
+
+    .site-header .block-search.layout-02 .area-search .location-field, .site-header .block-search.layout-03 .area-search .location-field {
+        padding: 5px 5px 5px 15px;
+    }
+
+    .block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search{
+        margin-right: -5px;
+    }
+
+/* 
+    END
+    Fix Header Search Alignment 
+*/
