@@ -3,32 +3,56 @@
 
     disableSearchType();
 
-    var $where  = $("#find_city"),
-        $find   = $("#find_input");
+    var $whereWrapper       = $("#wrapper .location-search"),
+        $findWrapper        = $("#wrapper .input-area"),
+        $wherePopup         = $(".search-form-wrapper .location-search"),
+        $findPopup          = $(".search-form-wrapper .input-area");
 
-    $where.click(function() {    
+    $whereWrapper.click(function() {    
         //clear value
-        $("input[name=ciid]").attr("value", "");
+        $("#wrapper input[name=ciid]").attr("value", "");
 
-        $(".location-field .area-result").hide();
-        $(".location-field .focus-result").show();
+        $("#wrapper .location-field .area-result").hide();
+        $("#wrapper .location-field .focus-result").show();
     });
     
-    $find.click(function() {    
+    $findWrapper.click(function() {    
         //clear value
-        $("input[name=ciid]").attr("value", "");
+        $("#wrapper input[name=ciid]").attr("value", "");
 
-        if ( $(".input-field .search-result").is(':visible') ) {
-            $("#find_input").removeAttr("readonly").css("cursor", "text");
+        if ( $("#wrapper .input-field .search-result").is(':visible') ) {
+            $("#wrapper #find_input").removeAttr("readonly").css("cursor", "text");
         }
         else {
-            $("#find_input").attr("readonly", "").css("cursor", "default");
+            $("#wrapper #find_input").attr("readonly", "").css("cursor", "default");
+        }
+    });
+    
+    $wherePopup.click(function() {    
+        //clear value
+        $(".search-form-wrapper input[name=ciid]").attr("value", "");
+
+        $(".search-form-wrapper .location-field .area-result").hide();
+        $(".search-form-wrapper .location-field .focus-result").show();
+    });
+    
+    $findPopup.click(function() {    
+        //clear value
+        $(".search-form-wrapper input[name=ciid]").attr("value", "");
+
+        if ( $(".search-form-wrapper .input-field .search-result").is(':visible') ) {
+            $(".search-form-wrapper #find_input").removeAttr("readonly").css("cursor", "text");
+        }
+        else {
+            $(".search-form-wrapper #find_input").attr("readonly", "").css("cursor", "default");
         }
     });
 
     function disableSearchType() {
-        $("#find_city").attr("readonly", "").css("cursor", "default");
-        $("#find_input").attr("readonly", "").css("cursor", "default");
+        $("#wrapper #find_city").attr("readonly", "").css("cursor", "default");
+        $("#wrapper #find_input").attr("readonly", "").css("cursor", "default");
+        $(".search-form-wrapper #find_city").attr("readonly", "").css("cursor", "default");
+        $(".search-form-wrapper #find_input").attr("readonly", "").css("cursor", "default");
     }
 
 })( jQuery );
