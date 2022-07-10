@@ -46,6 +46,12 @@ Tags: editor-style, featured-images, microformats, post-formats, rtl-language-su
             @media all and (min-width:450px) {
                 width: 300px;
             }
+            @media only screen and (max-width: 600px) {
+                .place-thumb .entry-thumb img {
+                    height: auto;
+                    object-fit:cover;
+                }
+            }
             .place-title{
                 padding-right: 10px;
             }
