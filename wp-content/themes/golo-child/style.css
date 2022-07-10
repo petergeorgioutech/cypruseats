@@ -8,22 +8,47 @@ Template: golo
 Text Domain: golo
 Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 */
-
 /* 
     BEGIN
     Fix Header Search Alignment 
 */
-
-    .site-header .block-search.layout-02 .area-search .location-field, .site-header .block-search.layout-03 .area-search .location-field {
-        padding: 5px 5px 5px 15px;
+.site-header .block-search.layout-02 .area-search .location-field, .site-header .block-search.layout-03 .area-search .location-field {
+    padding: 5px 5px 5px 15px;
+  }
+  
+  .block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search {
+    margin-right: -5px;
+  }
+  
+  /* 
+      END
+      Fix Header Search Alignment 
+  */
+  .single-place .place-thumbnails {
+    margin-bottom: 2rem;
+  }
+  .single-place .related-place.custom-place-block {
+    background-color: white;
+  }
+  .single-place .related-place .read-more {
+    color: #23d3d3;
+  }
+  .single-place .related-place .related-slide {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media all and (min-width: 450px) {
+    .single-place .related-place .related-slide {
+      width: 300px;
     }
-
-    .block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search{
-        margin-right: -5px;
+  }
+  @media only screen and (max-width: 600px) {
+    .single-place .related-place .related-slide .place-thumb .entry-thumb img {
+      height: auto;
+      object-fit: cover;
     }
-
-/* 
-    END
-    Fix Header Search Alignment 
-*/
-
+  }
+  .single-place .related-place .related-slide .place-title {
+    padding-right: 10px;
+  }

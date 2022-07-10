@@ -1,0 +1,55 @@
+/*
+Theme Name: Golo Child
+Theme URI: https://wp.getgolo.com/
+Author: Uxper
+Author URI: http://uxper.co/
+Version: 1.0.1
+Template: golo
+Text Domain: golo
+Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
+/* 
+    BEGIN
+    Fix Header Search Alignment 
+*/
+
+    .site-header .block-search.layout-02 .area-search .location-field, .site-header .block-search.layout-03 .area-search .location-field {
+        padding: 5px 5px 5px 15px;
+    }
+
+    .block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search{
+        margin-right: -5px;
+    }
+
+/* 
+    END
+    Fix Header Search Alignment 
+*/
+
+.single-place {
+    .place-thumbnails{
+        margin-bottom: 2rem;
+    }
+    .related-place {
+
+        &.custom-place-block{
+            background-color:white;
+        }
+        .read-more{
+            color:#23d3d3;
+        }
+        .related-slide {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            @media all and (min-width:450px) {
+                width: 300px;
+            }
+            .place-title{
+                padding-right: 10px;
+            }
+        }
+    }
+}
+

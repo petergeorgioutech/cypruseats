@@ -55,4 +55,6 @@
         $(".search-form-wrapper #find_input").attr("readonly", "").css("cursor", "default");
     }
 
+    // $(".single-place .slick-slider").not('.slick-initialized').slick();
+
 })( jQuery );
