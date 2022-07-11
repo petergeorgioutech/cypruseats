@@ -69,10 +69,6 @@ if( $content_selections ): ?>
                             <a class="entry-thumb" href="<?php echo esc_url( $permalink ); ?>" tabindex="0">
                                 <img src="<?php echo esc_url( $cur_url ); ?>" alt="<?php the_title_attribute($postid); ?>">
                             </a>
-
-                            <a class="entry-category" href="https://cypruseats.local/place-categories/international/?city=nicosia" tabindex="0">
-                                <img alt="International" src="https://cypruseats.local/wp-content/uploads/2022/06/International-Food@3x.png">
-                            </a>
                         </div>
                         <div class="entry-detail">
                             <div class="entry-head">
