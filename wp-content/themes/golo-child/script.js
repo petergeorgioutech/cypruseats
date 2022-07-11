@@ -55,6 +55,8 @@
         $(".search-form-wrapper #find_input").attr("readonly", "").css("cursor", "default");
     }
 
-    // $(".single-place .slick-slider").not('.slick-initialized').slick();
+    //Disable Google Signup/Login
+    $(".addon-login").remove();
+    $('<div class="addon-login">Continue with <a class="facebook-login" href="#">Facebook</a>').insertAfter(".head-popup .tabs-form");
 
 })( jQuery );
