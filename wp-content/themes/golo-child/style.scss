@@ -69,3 +69,17 @@ Tags: editor-style, featured-images, microformats, post-formats, rtl-language-su
 .block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search {
     margin-right: 0px;
 }
+
+.calendar-icon-wrapper{
+    margin-right: 0.5rem;
+    @media all and (min-width:768px) {
+        margin-right: 1rem;
+    }
+    .calendar-icon{
+        display: inline-block;
+        img{
+            width:26px;
+            height:26px;
+        }
+    }
+}

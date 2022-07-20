@@ -13,53 +13,69 @@ Tags: editor-style, featured-images, microformats, post-formats, rtl-language-su
     Fix Header Search Alignment 
 */
 .site-header .block-search.layout-02 .area-search .location-field, .site-header .block-search.layout-03 .area-search .location-field {
-    padding: 5px 5px 5px 15px;
-  }
-  
-  .block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search {
-    margin-right: -5px;
-  }
-  
-  /* 
-      END
-      Fix Header Search Alignment 
-  */
-  .single-place .place-thumbnails {
-    margin-bottom: 2rem;
-  }
-  .single-place .related-place.custom-place-block {
-    background-color: white;
-  }
-  .single-place .related-place .read-more {
-    color: #23d3d3;
-  }
+  padding: 5px 5px 5px 15px;
+}
+
+.block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search {
+  margin-right: -5px;
+}
+
+/* 
+    END
+    Fix Header Search Alignment 
+*/
+.single-place .place-thumbnails {
+  margin-bottom: 2rem;
+}
+.single-place .related-place.custom-place-block {
+  background-color: white;
+}
+.single-place .related-place .read-more {
+  color: #23d3d3;
+}
+.single-place .related-place .related-slide {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 450px) {
   .single-place .related-place .related-slide {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 300px;
   }
-  @media all and (min-width: 450px) {
-    .single-place .related-place .related-slide {
-      width: 300px;
-    }
+}
+@media only screen and (max-width: 600px) {
+  .single-place .related-place .related-slide .place-thumb .entry-thumb img {
+    height: auto;
+    object-fit: cover;
   }
-  @media only screen and (max-width: 600px) {
-    .single-place .related-place .related-slide .place-thumb .entry-thumb img {
-      height: auto;
-      object-fit: cover;
-    }
+}
+.single-place .related-place .related-slide .place-title {
+  padding-right: 10px;
+}
+
+#hero-wrapper {
+  margin-bottom: 1rem;
+}
+#hero-wrapper .elementor-element.elementor-element-60a0a791 {
+  min-height: 380px;
+}
+
+.block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search {
+  margin-right: 0px;
+}
+
+.calendar-icon-wrapper {
+  margin-right: 0.5rem;
+}
+@media all and (min-width: 768px) {
+  .calendar-icon-wrapper {
+    margin-right: 1rem;
   }
-  .single-place .related-place .related-slide .place-title {
-    padding-right: 10px;
-  }
-  
-  #hero-wrapper {
-    margin-bottom: 1rem;
-  }
-  #hero-wrapper .elementor-element.elementor-element-60a0a791 {
-    min-height: 380px;
-  }
-  
-  .block-search.layout-02 .input-field .icon-search, .block-search.layout-03 .input-field .icon-search, .block-search.layout-04 .input-field .icon-search {
-    margin-right: 0px;
-  }
+}
+.calendar-icon-wrapper .calendar-icon {
+  display: inline-block;
+}
+.calendar-icon-wrapper .calendar-icon img {
+  width: 26px;
+  height: 26px;
+}
