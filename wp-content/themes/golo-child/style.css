@@ -79,3 +79,14 @@ Tags: editor-style, featured-images, microformats, post-formats, rtl-language-su
   width: 26px;
   height: 26px;
 }
+
+.place-delivery {
+  border-top:none!important;
+  padding-top: 0!important;
+}
+.place-delivery a {
+  display: inline-block;
+}
+.place-delivery a img {
+  width: 80px;
+}
