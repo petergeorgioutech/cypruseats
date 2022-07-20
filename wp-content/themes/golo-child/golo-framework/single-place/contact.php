@@ -157,28 +157,28 @@ if( have_rows('delivery_options') ):
 
                 if( get_sub_field('default_options') == 'foody' ) {
                     ?>
-                        <a href="<?= $link ?>">
+                        <a href="<?= $link ?>" target="_blank">
                             <img class="delivery-image" src="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/assets/img/foody.png" alt="Foody">
                         </a>
                     <?php
                 }
                 else if( get_sub_field('default_options') == 'wolt' ) {
                     ?>
-                        <a href="<?= $link ?>">
+                        <a href="<?= $link ?>" target="_blank">
                             <img class="delivery-image" src="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/assets/img/wolt.png" alt="Wolt">
                         </a>
                     <?php
                 }
                 else if( get_sub_field('default_options') == 'bolt' ) {
                     ?>
-                        <a href="<?= $link ?>">
+                        <a href="<?= $link ?>" target="_blank">
                             <img class="delivery-image" src="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/assets/img/bolt.png" alt="Bolt">
                         </a>
                     <?php
                 }
                 else {
                     ?>
-                        <a href="<?= $link ?>">
+                        <a href="<?= $link ?>" target="_blank">
                             <img class="delivery-image" src="<?= $image ?>">
                         </a>
                     <?php
