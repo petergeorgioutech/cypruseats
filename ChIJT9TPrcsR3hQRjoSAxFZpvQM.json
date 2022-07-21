@@ -1,0 +1,289 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Cyprus",
+            "short_name" : "CY",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "Aydemet",
+            "short_name" : "Aydemet",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "2361",
+            "short_name" : "2361",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "Ayiou Pavlou 87 Agios Dometios, \u003cspan class=\"locality\"\u003eAydemet\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e2361\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eCyprus\u003c/span\u003e",
+      "business_status" : "OPERATIONAL",
+      "formatted_address" : "Ayiou Pavlou 87 Agios Dometios, Aydemet 2361, Cyprus",
+      "formatted_phone_number" : "22 777355",
+      "geometry" : {
+         "location" : {
+            "lat" : 35.1778112,
+            "lng" : 33.3347444
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 35.1790836802915,
+               "lng" : 33.3360768802915
+            },
+            "southwest" : {
+               "lat" : 35.1763857197085,
+               "lng" : 33.3333789197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color" : "#FF9E67",
+      "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "international_phone_number" : "+357 22 777355",
+      "name" : "φούλ του μεζέ - Foul tou Meze",
+      "opening_hours" : {
+         "open_now" : false,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "1500"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1200"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "2300"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "2300"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "2300"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "2300"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "2300"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "2300"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "2300"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1800"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "Monday: 6:00 – 11:00 PM",
+            "Tuesday: 6:00 – 11:00 PM",
+            "Wednesday: 6:00 – 11:00 PM",
+            "Thursday: 6:00 – 11:00 PM",
+            "Friday: 6:00 – 11:00 PM",
+            "Saturday: 6:00 – 11:00 PM",
+            "Sunday: 12:00 – 3:00 PM, 6:00 – 11:00 PM"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 924,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117491972300144710634\"\u003eφούλ του μεζέ - Foul tou Meze\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3cxU1FL52wZqB_docrTE-x-pICAXhRxD0PEGpGzxpXXpS3QJo9Shz_C9kTchlvyd7CJSlb7dSiH5aRyjbgATO1ROZOmw11IEoIJdxz4GREaP1tKZkMBpo02nkU1X3X0SgiLXn_Q2BXFpxEBUftq7y7mNrjDghReHKLwpwR_S2ecxSSa",
+            "width" : 1640
+         },
+         {
+            "height" : 960,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117491972300144710634\"\u003eφούλ του μεζέ - Foul tou Meze\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3e1qbl_cc-A-mnXPLSfNYp_dAFx86Y6Kgk89_FXzHdT0fW5K5yMMo_kytbzdX1Yp1lCmT2G51XLAN6DlNwYhoxhe7nvNFwVJObXyODCK5VS_8d9_L3Tcgu7zOe-aGrLJS8xNiEankgnVscEUc4y8OkQv2tfFLgzV8eL-8BWo0gLMEDZ",
+            "width" : 1280
+         },
+         {
+            "height" : 4618,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100433750696043372798\"\u003eArsenios Hadjitheodoulou\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3fCOgbx2K8Qv1GexS1MOpsQNjMyiVFxhYm4DQWHJFfhWV618EuLlaDM3iMY-zRZqtJr7bISg7QEQEGwn7aX35fFOIJfD1nU_xg-gM6K6YKEOdrHbyf0y_emjnP3P1-ecGb635rJEC1lDGQJSQ6i3RFZDmDdWOhSMvx6WbTI5nEDX0BO",
+            "width" : 3464
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101091245372944765603\"\u003eA T\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3cwgOgjGZA2wHRXxm1fk7ksTklp7R_PIXX71SkublO25LDMV1ddjitzpEX7xI-jnY33mU1UD0usZqbAeofpqksmftEp1TbZfwm7Y3mCqkoquXmaUSXosenLTyLXbMlLzBhTJFAIcJdqb5JTHwaO7V_7kTCfk0UTCsdYKW3OOnjzcNYA",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101091245372944765603\"\u003eA T\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3ebylq8LtsNzRxj4tXLGl5uWI7Dghi4s347gTFd2h2QdD28BPSvbciZ-qogwdtBlVhVVGpYmD5nnJijCuH1Xzp8o8QZ_zYkT6bHKyxEoDbAiwtiIH0E68ItetFbCv832v7EiXjjqJismhXxy_-A1xoMJf0SFUQwEuCh1TUKRU1hIKRu",
+            "width" : 3024
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101091245372944765603\"\u003eA T\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3cE2jd7V28pQ2AY7GPjnoDAe9BazWod3zOce7iSJ1uXgLtpProliCjVjkoS0BLyRDPzKE4Bu6SdNS2lLnP9KmMNt9023nFM3n9bDkLYS-XwvnsHaWJmPGyxf1yyTV2Ga3-vlNfs3sZAcQcDTYFCizpyb0ui2CcPJ1rZ7e8IrwLXW4Wk",
+            "width" : 3024
+         },
+         {
+            "height" : 4618,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100433750696043372798\"\u003eArsenios Hadjitheodoulou\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3dDlQAfk5sbDDjBlIThAd47N3DZcOZ06bXgrQ8l1JrpmTSdxhYeTiDBW8wr_X_SSxCfrgcM8jhLYwRAieABmCANsQGV0e4AsFKUfifNUCcKdBn57tQdO5GbrCosJ-dUyCmhPsiC1ZFAPnWMiY0Zj5DeV7fKa9j_ZgdvrgiEli4Ajk3t",
+            "width" : 3464
+         },
+         {
+            "height" : 4618,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100433750696043372798\"\u003eArsenios Hadjitheodoulou\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3fCXVpC42hptQ4nT-LYuTmragshP7wUWAC1gBi0MrLR7rk-0MlbA2P9yzLcJLOrRok6ali9A0UfP_eDkhW6cAjOGoR8yM__Lu2YM3ePMgyPjyDIqy5iz_iDGT_4U5txNNqKO3RlrDU2oMOQmwQF0fjzmtg0fIEzpQt5w57E_CyVJoMb",
+            "width" : 3464
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101091245372944765603\"\u003eA T\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3eShNafOJtbxz7R0rAmAfHbOVpx0WC-6kfYle8HIfjRClxh4DX_vlX37j1pFohNoCfmUav3HVttox3SdKYGGmm3Qxa2ARwf7CM5kGwm9K3-Jz3ebzeA7flyeJP9tUvIZPhydCisiLb2OKuqKgW9-uM68UM6PSAi-wVw6oQ6r7FODEPi",
+            "width" : 3024
+         },
+         {
+            "height" : 4618,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100433750696043372798\"\u003eArsenios Hadjitheodoulou\u003c/a\u003e"
+            ],
+            "photo_reference" : "AeJbb3f3dVxv0DBguMVNPL4RS9uOrOmCFGGW7xyLLcnQeYCzgQUSYccanAoj5hN6DgkPxbgIqPFPkkbfAqmiwmDccLmPSwxk9vr3vC3pvdfKTNiP_I2X5AlHdRmTTGYwZb5Q3pePNCpk_ZrelHNe1UYMdjeGhchRTTzZZHR9kPYpAeDgw_qW",
+            "width" : 3464
+         }
+      ],
+      "place_id" : "ChIJT9TPrcsR3hQRjoSAxFZpvQM",
+      "plus_code" : {
+         "compound_code" : "58HM+4V Agios Dometios, Cyprus",
+         "global_code" : "8G7M58HM+4V"
+      },
+      "rating" : 4.4,
+      "reference" : "ChIJT9TPrcsR3hQRjoSAxFZpvQM",
+      "reviews" : [
+         {
+            "author_name" : "Paul Anastasiou",
+            "author_url" : "https://www.google.com/maps/contrib/111449485197166394242/reviews",
+            "language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/AItbvmnQr5VuHZxiRoVLb6fqYfP1pl09J2HSDfFKVxZL=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "3 months ago",
+            "text" : "What night , what a place !\nFood excellent , staff friendly - music immense !",
+            "time" : 1650029192
+         },
+         {
+            "author_name" : "Chryssa Panou",
+            "author_url" : "https://www.google.com/maps/contrib/116153113076755621378/reviews",
+            "language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/AFdZucoqV4oedXRtCvpDOQBtpvVqgQkWwoUL8GrxlCxAH68=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 4,
+            "relative_time_description" : "9 months ago",
+            "text" : "We went for the mezze and by the end, we felt so full, that we had to get a doggie bag. Generous portions and flavourful dishes. Quality is certainly not sacrificed for quantity here and a great balance is ensured. Attentive and polite service. We paid by card around €45 (drinks included) and we left very satisfied on a Saturday evening. Overall, this is a place I will return to. If there was perhaps one thing that was a bit off for me was the dessert’s price in comparison to the rest of the bill.",
+            "time" : 1633709656
+         },
+         {
+            "author_name" : "Andrew Jones",
+            "author_url" : "https://www.google.com/maps/contrib/105980560071878625713/reviews",
+            "language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/AItbvmnGsBDcnA5_NW8K45kSd6lSW_vPwgY-hpt4dmpx=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "4 months ago",
+            "text" : "Very welcoming and very popular so reserve a table.",
+            "time" : 1646552867
+         },
+         {
+            "author_name" : "A T",
+            "author_url" : "https://www.google.com/maps/contrib/101091245372944765603/reviews",
+            "language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/AFdZucokEoHV9Cltrs4284bU9QGPwZGwZ7ic08hGkhEHxDc=s128-c0x00000000-cc-rp-mo-ba6",
+            "rating" : 5,
+            "relative_time_description" : "a year ago",
+            "text" : "Best souvlaki in Nicosia and has the greatest Kandeifi dessert",
+            "time" : 1604512091
+         },
+         {
+            "author_name" : "Arsenios Hadjitheodoulou",
+            "author_url" : "https://www.google.com/maps/contrib/100433750696043372798/reviews",
+            "language" : "en",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/AFdZuco4c0u_v2c5f2gfa_iIUi18K4ZM3AqJnlph91U7uA=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating" : 4,
+            "relative_time_description" : "2 months ago",
+            "text" : "Pleasant experience.\nThe space is small and simple.\nAlthough this tavern is known to serve opposite, we ordered classic appetizers. They cost € 19 each. Everything was delicious. My only complaint from the food is that the number of dishes was small. The portions were satisfactory but there was not enough food left.\nThe service was elusive.\nIt also had live music Friday night.",
+            "time" : 1652123499
+         }
+      ],
+      "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=269487374096958606",
+      "user_ratings_total" : 22,
+      "utc_offset" : 180,
+      "vicinity" : "Ayiou Pavlou 87 Agios Dometios",
+      "website" : "https://www.facebook.com/foultoumezenicosia/"
+   },
+   "status" : "OK"
+}
