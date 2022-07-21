@@ -148,6 +148,10 @@ if( have_rows('delivery_options') ):
     ?>
     <div class="place-delivery place-area">
 	    <div class="entry-detail">
+		<?php
+			if (get_field('delivery_icon')) { ?>
+				<img class="delivery-icon" src="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/assets/img/delivery.png" alt="delivery available">
+			<?php } ?>
         <?php
             while( have_rows('delivery_options') ) : the_row();
                 // Get parent value.

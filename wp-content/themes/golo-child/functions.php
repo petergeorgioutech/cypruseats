@@ -88,6 +88,25 @@ if( function_exists('acf_add_local_field_group') ):
 		'title' => 'Delivery',
 		'fields' => array(
 			array(
+				'key' => 'field_62d91dd6674e6',
+				'label' => 'Delivery Icon',
+				'name' => 'delivery_icon',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'message' => 'Show/Hide Icon',
+				'default_value' => 0,
+				'ui' => 1,
+				'ui_on_text' => 'Visible',
+				'ui_off_text' => 'Hidden',
+			),
+			array(
 				'key' => 'field_62d811f69a102',
 				'label' => 'Delivery Options',
 				'name' => 'delivery_options',
