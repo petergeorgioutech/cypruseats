@@ -132,3 +132,41 @@ Tags: editor-style, featured-images, microformats, post-formats, rtl-language-su
     }
 
 }
+
+.archive-post{
+    @media all and (max-width:767px) {
+        grid-template-columns: repeat(2,1fr) !important;
+        article:nth-child(5n) {
+            grid-column: 1 / span 2;
+        }
+        .inner-post-wrap{
+            .entry-post-detail{
+                margin-top: 10px !important;
+                .post-categories{
+                    margin-bottom: 5px;
+                    li{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .entry-title{
+                .post-title{
+                    font-size: 16px !important;
+                    line-height: 22px !important;
+                }
+            }
+            .post-meta{
+                margin-bottom: 10px;
+                .post-time, .post-comment{
+                    display: none;
+                }
+                div:after{
+                    display: none;
+                }
+            }
+            .post-excerpt{
+                display: none !important;
+            }
+        }
+    }
+}
