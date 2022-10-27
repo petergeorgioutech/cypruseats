@@ -46,7 +46,8 @@ Tags: editor-style, featured-images, microformats, post-formats, rtl-language-su
 @media only screen and (max-width: 600px) {
   .single-place .related-place .related-slide .place-thumb .entry-thumb img {
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .single-place .related-place .related-slide .place-title {
@@ -93,3 +94,34 @@ Tags: editor-style, featured-images, microformats, post-formats, rtl-language-su
 .place-delivery a img {
   width: 55px;
 }
+
+@media all and (max-width: 767px) {
+  .custom-post-grid .elementor-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .custom-post-grid .elementor-grid .elementor-post__badge {
+    display: none;
+  }
+  .custom-post-grid .elementor-grid .elementor-post__thumbnail__link {
+    margin-bottom: 0px !important;
+  }
+  .custom-post-grid .elementor-grid .elementor-post__text {
+    padding: 0 15px !important;
+  }
+  .custom-post-grid .elementor-grid .elementor-post__title {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+  .custom-post-grid .elementor-grid .elementor-post__excerpt {
+    display: none !important;
+  }
+  .custom-post-grid .elementor-grid .elementor-post__meta-data {
+    padding: 10px 15px !important;
+  }
+  .custom-post-grid .elementor-grid .elementor-post__meta-data .elementor-post-avatar {
+    display: none !important;
+  }
+  .custom-post-grid .elementor-grid .elementor-post:nth-child(5n) {
+    grid-column: 1/span 2;
+  }
+}/*# sourceMappingURL=style.css.map */

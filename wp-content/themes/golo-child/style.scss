@@ -97,3 +97,38 @@ Tags: editor-style, featured-images, microformats, post-formats, rtl-language-su
         }
     }
 }
+
+.custom-post-grid{
+    
+    @media all and (max-width:767px) {
+        .elementor-grid {
+            grid-template-columns: repeat(2,1fr) !important;
+            .elementor-post__badge{
+                display: none;
+            }
+            .elementor-post__thumbnail__link {
+                margin-bottom: 0px !important;
+            }
+            .elementor-post__text{
+                padding: 0 15px !important;
+            }
+            .elementor-post__title {
+                font-size: 16px !important;
+                margin-bottom: 10px!important;
+            }
+            .elementor-post__excerpt{
+                display: none !important;
+            }
+            .elementor-post__meta-data{
+                padding: 10px 15px !important;
+                .elementor-post-avatar{
+                    display: none !important;
+                }
+            }
+            .elementor-post:nth-child(5n) {
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+
+}
